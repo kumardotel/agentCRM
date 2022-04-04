@@ -11,4 +11,4 @@ class AgentAdmin(admin.ModelAdmin):
     pass
 
 class LeadAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'first_name', 'last_name', 'agent')
