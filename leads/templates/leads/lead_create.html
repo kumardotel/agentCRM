@@ -1,7 +1,9 @@
 
-
-
 {% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'leads/css/style.css' %}">
+{% endblock css %}
 {% block content %}
 <h1>Lead Creation Page</h1>
     <form method='POST'>
